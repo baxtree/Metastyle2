@@ -75,7 +75,7 @@
 					                <a id="popular" href="proxy3">Popular</a>
 					              </li>
 					            </ul>
-					            <g:javascript>
+                                <script type="text/javascript">
 					            	if(document.location.hash == "#mostviews") {
 					            		document.getElementById("group-recent").removeAttribute("class");
 					            		document.getElementById("group-popular").removeAttribute("class");
@@ -86,7 +86,7 @@
 					            		document.getElementById("group-most-views").removeAttribute("class");
 					            		document.getElementById("group-popular").setAttribute("class", "active");
 					            	}
-					            </g:javascript>
+					            </script>
 					          </div>
 					        </div>
 					    </div>

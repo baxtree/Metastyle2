@@ -1,12 +1,12 @@
 <g:render template="../templates/header" />
-<g:javascript>
+<script type="text/javascript">
 	$(document).ready(function(){
 		$('button#copy').zclip({
 			path:'../../js/ZeroClipboard.swf',
 			copy:$('textarea#template_txt').text()
 		});
 	});
-</g:javascript>
+</script>
 <g:render template="../templates/banner" />
 	<section id="menu-bar">
 		<div class="container">

@@ -36,9 +36,9 @@
 		<g:else>
 			<!-- show the user's templates -->
 			<g:if test="${ flash.message.toString() == 'template saved' }">
-				<g:javascript>
+				<script type="text/javascript">
 					resetLocalStorage();
-				</g:javascript>
+				</script>
 			</g:if>
 			<g:if test="${ flash.message }">
 				<span class="warning span3">${ flash.message }</span>

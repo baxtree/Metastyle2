@@ -1,5 +1,5 @@
 <g:render template="../templates/header" />
-<g:javascript>
+<script type="text/javascript">
 $(document).ready(function(){
 		$('button#copy').zclip({
 			path:'../js/ZeroClipboard.swf',
@@ -10,7 +10,7 @@ $(document).ready(function(){
 			copy: function() { return cssta.getValue(); }
 		});
 	});
-</g:javascript>
+</script>
 <g:render template="../templates/banner" />
 	<section id="menu-bar">
 		<div class="container">
@@ -174,14 +174,14 @@ $(document).ready(function(){
 		      recoverTemplate(cssta, htmlta);
 		    </script>
 		   	<g:if test="${ template }">
-		   		<g:javascript>
+		   		<script type="text/javascript">
 		   			document.getElementById("playground").style.display = "block";
-		   		</g:javascript>
+		   		</script>
 		   	</g:if>
 		   	<g:else>
-		   		<g:javascript>
+		   		<script type="text/javascript">
 		   			document.getElementById("playground").style.display = "none";
-		   		</g:javascript>
+		   		</script>
 		   	</g:else>
 	</section>
 <g:render template="../templates/footer"></g:render>
